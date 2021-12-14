@@ -44,10 +44,8 @@ header {
 
 }
 
-.menu ul {
-    width: 500px;
-    margin: 0 auto;
-    
+.menu ul {    
+    margin-left: 36vw;
 }
 
 .menu ul li {
@@ -67,13 +65,69 @@ header {
 }
 
 .menu ul li:hover {
-    background: rgba(80, 80, 80, 0.418);
+    background: rgba(80, 80, 80, 0.288);
     transition: .3s ease-out;
     
 }
 
-.menu #icone-pesquisa img {
+.menu ul li2{
+    position: absolute;
+    right: 10px;
+    top: 8px;
 }
+
+.search-box {
+    position: absolute;
+    height: 25px;
+    padding: 5px;
+    background: #23af91;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    color: #f3f3f3;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 15px;
+
+    width: 0px;
+
+    transition: .5s;
+
+}
+.search-btn {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-icone {
+    height: 15px;
+    width: 15px;
+
+    transition: .5s;
+}
+
+.search-box:hover .search-icone {
+    transform: rotate(-270deg);
+}
+
+.search-box:hover > .search-text {
+    width: 200px;
+    padding: 0 6px;
+}
+
+
+
 
 header h2 {
     display: inline-block;
@@ -81,7 +135,7 @@ header h2 {
     width: 400px;
     font-family: 'fon1';
     font-size: 3em;
-    top: 15vh;
+    top: 18vh;
     left: 8vh;
 
     color: rgb(255, 255, 255);
@@ -92,6 +146,10 @@ header h2 {
 header h2 span {
     font-size: 1.4em;
     color: rgb(109, 175, 120);
+}
+
+header h2 span2 {
+    color: rgb(65, 172, 166);
 }
 
 .separat {
@@ -154,13 +212,14 @@ main h1 {
     background: black;   
     color: white;
     border-radius: 10px;
+
 }
 
 .blocs p {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.61));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.466));
     border-radius: 10px;
     height:  100%;
     cursor: pointer;
