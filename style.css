@@ -12,7 +12,7 @@
 
 body{
     background-image: linear-gradient(to bottom, #23af69, #265181) ;
-    height: 200ddvh;
+    height: 200vh;
 }
 
 header {
@@ -39,7 +39,7 @@ header {
 }
 
 .menu {
-    height: 50px;
+    height: 48px;
     background: rgba(85, 84, 84, 0.575);
 
 }
@@ -47,18 +47,19 @@ header {
 .menu ul {
     width: 500px;
     margin: 0 auto;
-
+    
 }
 
 .menu ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 15px;
-    margin: 5px 0px;
     border-radius: 5px;
+    margin: 5px 5px ;
 }
 
 .menu ul li a {
+    padding: 8px 10px;
+    display: block;
     text-decoration: none;
     font-weight: 500;
     color: rgb(226, 223, 223);
@@ -67,8 +68,11 @@ header {
 
 .menu ul li:hover {
     background: rgba(80, 80, 80, 0.418);
-    transition: .3s ease;
+    transition: .3s ease-out;
     
+}
+
+.menu #icone-pesquisa img {
 }
 
 header h2 {
