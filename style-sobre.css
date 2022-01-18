@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'fon1';
+    src: url('Philosopher-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'fon2';
+    src: url('fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+
+body {
+    background-image: linear-gradient(to bottom, #23af69, #1d4c81);
+    height: 400vh;
+}
+
+header {
+    width: 100%;
+    height: 840px;
+
+    background-image: url("imgs/header.jpg") ;
+    background-size: cover ;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header .titulo h1 {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    font-family: 'fon1';
+    font-size: 3.4em;
+    top: 18vh;
+    left: 8vh;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.315);
+}
+
+.titulo h1 span {
+    font-size: 1.3em;
+    color: #6daf78;
+
+}
+
+.logo {
+    position: relative;
+    top: 10px;
+    left: 20px;
+
+    background: black;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.menu {
+    height: 48px;
+    background: rgba(85, 84, 84, 0.575);
+
+}
+
+.menu ul {    
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu ul li a {
+    padding: 8px 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(226, 223, 223);
+
+    transition: .5s;
+
+
+}
+
+.menu ul li a:hover {
+    background: rgba(80, 80, 80, 0.288);
+    
+}
+
+.menu ul li2{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.search-box {
+    position: absolute;
+    height: 25px;
+    padding: 5px;
+    background: #23af91;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    color: #f3f3f3;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 15px;
+
+    width: 0px;
+
+    transition: .5s;
+
+}
+.search-btn {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-icone {
+    height: 15px;
+    width: 15px;
+
+    transition: .5s;
+}
+
+.search-box:hover .search-icone {
+    transform: rotate(-270deg);
+}
+
+.search-box:hover > .search-text {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.separat {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, #00a552, #04703a88 );
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.137);
+}
+
+main {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 690px;
+    background: #04c283;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 45px 40px 10px rgba(0, 0, 0, 0.486);
+}
+
+.content h2 {
+    font-family: 'fon1';
+    font-size: 2.3em;
+    text-align: center;
+    line-height: 1.2em;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.199);
+    color: #0e4e49;
+    margin: 10px;
+}
+
+.content p {
+
+    font-family: 'fon2';
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: 10px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+#quem {
+    position: relative;
+    left: 30px;
+    top: 30px;
+    z-index: 1;
+}
+
+#fazemos {
+    position: relative;
+    left: 600px;
+    top: 100px;
+}
