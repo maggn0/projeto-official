@@ -44,7 +44,7 @@ header {
 }
 
 .menu ul {    
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -141,6 +141,8 @@ header h2 {
     top: 18vh;
     left: 8vh;
 
+    transition: 0.5s;
+
     color: rgb(255, 255, 255);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.315);
      
@@ -190,9 +192,6 @@ main h1 {
     padding: 10px;
 
     grid-gap: 8px;
-
-    grid-template-columns: 4fr 4fr;
-
     justify-content: center;
 }
 
@@ -488,4 +487,44 @@ footer div a img:hover {
 
 abbr {
     text-decoration: none;
+}
+
+@media (max-width: 1259px) {
+
+    .menu ul li a {
+        font-size: 15px;
+    }
+
+    header h2 {
+
+        font-size: 2em;
+        top: 25vh;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+        
+    #item1, #item2, #item3, #item4, #item5, #item6 {
+
+        width: 200px;
+        height: 200px;
+    }
+
+    #itemp2 {
+
+        background-position: top left;
+    }
+
+    .container sidenavf, #sidenav {
+
+        height: 200px;
+    }
+
+    .globo {
+        
+    }
+    
+
 }
