@@ -27,6 +27,8 @@ header {
 
 }
 
+
+
 .logo {
     position: relative;
     top: 10px;
@@ -135,7 +137,7 @@ header {
 header h2 {
     display: inline-block;
     position: relative;
-    width: 400px;
+    width: 370px;
     font-family: 'fon1';
     font-size: 3em;
     top: 18vh;
@@ -170,10 +172,17 @@ main h1 {
     margin-top: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#121333;
-
-    
 }
 
+h4 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#121333;
+
+    display: none;
+}
 
 .linha-h1 {
     width: 95vw;
@@ -326,7 +335,6 @@ div.video iframe {
 
 .pric1 {
     max-width: 1600px;
-    min-width: 1200px;
     padding: 20px;
     margin: 100px auto 20px auto;
     background-image: linear-gradient(to right, rgba(51, 112, 182, 0.486), rgba(37, 114, 145, 0.432)) ;
@@ -492,7 +500,7 @@ abbr {
 @media (max-width: 1259px) {
 
     .menu ul li a {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     header h2 {
@@ -522,9 +530,87 @@ abbr {
         height: 200px;
     }
 
-    .globo {
-        
-    }
-    
+
+
+
 
 }
+
+#princ1-min {
+    display: none;
+}
+
+@media (max-width: 600px){
+    #barra-p {
+
+        top: 55px;
+    }
+
+    .menu {
+        padding-left: 80px;
+    }
+
+    header {
+        width: auto;
+        background-position: center center;
+    }
+
+    header h2 {
+
+        display: block;
+        font-size: 1.8em;
+        top: 15vh;
+        left: 5vh;
+
+    }
+
+
+
+    main h1 {
+        
+        font-size: 1.5em;
+    }
+
+    .linha-h1 {
+        height: 2px;
+        width: 85vw;
+    }
+
+    .container {
+    display: none;
+    }
+
+    main h4 {
+        display: block;
+    }
+
+    .pric1 {
+        display: none;
+    }
+
+    #princ1-min {
+        display: none;
+
+        height: 400px;
+        width: 80%;
+        background-image: linear-gradient(to right, rgba(51, 112, 182, 0.486), rgba(37, 114, 145, 0.432)) ;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.144);
+    }
+
+  /*
+    .globo-min {
+        background-image: url(imgs/litosfera.png);
+
+        height: 200px;
+        width: 80%;
+    }
+    
+    */
+
+
+
+
+    
+}
+
